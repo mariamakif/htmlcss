@@ -1,19 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type="text/javascipt">
-        alert('Hello everyone');
-    </script>
+    <meta charset="utf-8">
+    <title>HTML</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+        }
+
+        .column {
+            border-width: 1px;
+            border-style: solid;
+            border-color: lightgray;
+            padding: 20px 0;
+        }
+
+        .column:hover {
+            box-shadow: 0 4px 8px 0 lightgray, 0 6px 20px 0 lightgray;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .mainsearch {
+            height: 30px;
+            width: 300px;
+            border-radius: 25px;
+            border-color: lightgray;
+        }
+    </style>
 </head>
+
 <body>
-    This is a change by Akif
-    this is a change by maryam
-    <footer>
-        Copyright message
-    </footer>
+    <div class="center">
+        <h2>
+            Help Center
+        </h2>
+        <input placeholder="Search" class="mainsearch" />
+    </div>
+
+    <br />
+    <div class="container">
+        <div class="column">
+            <p> Billing and Membership </p>
+        </div>
+        <div class="column">
+            <p> Managing and Organizing </p>
+        </div>
+        <div class="column">
+            <p>Uploading </p>
+        </div>
+        <div class="column">
+            <p>Uploading </p>
+        </div>
+        <div class="column">
+            <p> Video Enterprise </p>
+        </div>
+        <div class="column">
+            <p> Creators</p>
+        </div>
+        <div class="column">
+            <p> Enterprise</p>
+        </div>
+        <div class="column">
+            <p> Features</p>
+        </div>
+        <div class="column">
+            <p> Sales</p>
+        </div>
+        <div class="column">
+            <p> Embedding and Sharing</p>
+        </div>
+        <div class="column">
+            <p> FAQs</p>
+        </div>
+        <div class="column">
+            <p>Developers</p>
+        </div>
+    </div>
 </body>
+
 </html>
